@@ -58,7 +58,7 @@ public:
 	inline int getID() const { return node_id; }
 	inline void setID(int id) { node_id = id; }
 	
-	inline void setParent(SuperClass &parent) { this->parent = &parent; }
+	inline void setParent(SuperClass &parent) { ofNode::setParent(parent); }
 	inline SuperClass* getParent() const { return (SuperClass*)parent; }
 	inline bool hasParent() const { return parent != NULL; }
 	
